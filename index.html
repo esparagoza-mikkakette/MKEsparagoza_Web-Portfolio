@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.K. Esparagoza — Portfolio</title>
+    <meta name="description" content="Portfolio of M.K. Esparagoza — projects, skills, and resume." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="glow glow--big"></div>
+      <div class="glow glow--mid"></div>
+      <div class="glow glow--small"></div>
+      <div class="grain" aria-hidden="true"></div>
+    </div>
+
+    <header class="topbar" id="top">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">M.K.</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#projects">Gallery</a>
+          <a class="nav__link" href="#resume">Resume</a>
+          <a class="nav__link" href="#contact">Contacts</a>
+        </nav>
+
+        <button class="navToggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" aria-label="Hero">
+        <div class="heroCard">
+          <div class="heroCard__left">
+            <div class="kicker">OUR VERSION</div>
+            <h1 class="title">
+              DESIGN
+              <span class="title__sub">PORTFOLIO</span>
+            </h1>
+
+            <p class="lead">
+              I build clean, modern interfaces with a focus on clarity, motion, and good UX.
+            </p>
+
+            <div class="heroActions">
+              <a class="btn btn--primary" href="#projects">
+                <span>See Work</span>
+                <span class="btn__icon" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+            </div>
+
+            <div class="pager" aria-hidden="true">
+              <div class="pager__line"></div>
+              <div class="pager__nums"><span>01</span><span>03</span></div>
+            </div>
+          </div>
+
+          <div class="heroCard__right" aria-hidden="true">
+            <div class="statueWrap">
+              <div class="statueCircle"></div>
+              <div class="statueGlow"></div>
+              <div class="statue" role="img" aria-label="Abstract sculpture"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section__head">
+          <h2 class="section__title">About</h2>
+          <p class="section__desc">
+            Replace this with a short bio: what you do, what you’re learning, and what roles you want.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3 class="panel__title">What I do</h3>
+            <p class="panel__text">
+              Front-end development, UI design, responsive layouts, and clean component systems.
+            </p>
+            <div class="chips">
+              <span class="chip">UI/UX</span>
+              <span class="chip">Web</span>
+              <span class="chip">Responsive</span>
+              <span class="chip">Accessibility</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3 class="panel__title">Toolbox</h3>
+            <p class="panel__text">
+              Add your stack here. (Example: HTML, CSS/SCSS, JavaScript/TypeScript, Angular/React).
+            </p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Git</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__head">
+          <h2 class="section__title">Gallery</h2>
+          <p class="section__desc">A few projects. Replace cards with your real work and links.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__media"></div>
+            <div class="card__body">
+              <h3 class="card__title">Project One</h3>
+              <p class="card__text">Short description of what you built and the result.</p>
+              <div class="card__meta">
+                <span class="pill">UI</span>
+                <span class="pill">Frontend</span>
+              </div>
+              <div class="card__actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"></div>
+            <div class="card__body">
+              <h3 class="card__title">Project Two</h3>
+              <p class="card__text">Short description of what you built and the result.</p>
+              <div class="card__meta">
+                <span class="pill">Design</span>
+                <span class="pill">Case Study</span>
+              </div>
+              <div class="card__actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Read</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Assets</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"></div>
+            <div class="card__body">
+              <h3 class="card__title">Project Three</h3>
+              <p class="card__text">Short description of what you built and the result.</p>
+              <div class="card__meta">
+                <span class="pill">Web App</span>
+                <span class="pill">UX</span>
+              </div>
+              <div class="card__actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Live</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="section__head">
+          <h2 class="section__title">Resume</h2>
+          <p class="section__desc">
+            Download your resume or skim highlights below.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3 class="panel__title">Quick Highlights</h3>
+            <ul class="bullets">
+              <li>Strong foundation in modern web layout and responsive UI.</li>
+              <li>Comfortable with component-based development and reusable styling.</li>
+              <li>Open to internships / junior roles.</li>
+            </ul>
+            <div class="heroActions">
+              <a class="btn btn--primary" href="../MEsparagoza%20-%20RESUME.docx" download>
+                <span>Download Resume</span>
+                <span class="btn__icon" aria-hidden="true">↓</span>
+              </a>
+              <button class="btn btn--ghost" id="resumeTip" type="button">Deployment tip</button>
+            </div>
+            <p class="hint" id="resumeHint" hidden>
+              For hosting (GitHub Pages/Netlify), copy your resume into this project folder (e.g. <code>assets/resume.docx</code>)
+              and update the link.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3 class="panel__title">Resume Preview</h3>
+            <p class="panel__text">
+              DOCX files don’t embed reliably in browsers. For an inline preview, export your resume to PDF and link it here.
+            </p>
+            <div class="preview">
+              <div class="preview__empty">
+                <div class="preview__label">Add a PDF for preview</div>
+                <div class="preview__sub">assets/resume.pdf</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__head">
+          <h2 class="section__title">Contacts</h2>
+          <p class="section__desc">
+            Add your real email and social links.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <article class="panel">
+            <h3 class="panel__title">Let’s build something</h3>
+            <p class="panel__text">
+              Tell me about your project or role. I reply as soon as I can.
+            </p>
+            <div class="contactLinks">
+              <a class="link" href="mailto:youremail@example.com">youremail@example.com</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <form class="panel" id="contactForm">
+            <h3 class="panel__title">Quick message</h3>
+            <label class="field">
+              <span class="field__label">Name</span>
+              <input class="field__input" name="name" placeholder="Your name" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="field__input" type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label class="field">
+              <span class="field__label">Message</span>
+              <textarea class="field__input field__input--area" name="message" rows="4" placeholder="Write a message..." required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">
+              <span>Send via Email</span>
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </button>
+            <p class="hint">This form opens your email app (no backend needed).</p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div>© <span id="year"></span> M.K. Esparagoza</div>
+          <a class="link" href="#top">Back to top</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

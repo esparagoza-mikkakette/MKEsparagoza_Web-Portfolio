@@ -1,0 +1,42 @@
+.page {
+  padding: 3.75rem 0 3rem;
+  min-height: 100vh;
+}
+
+.page-title {
+  margin: 0 0 0.5rem;
+}
+
+.page__desc {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.panel__title {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.stack {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

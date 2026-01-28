@@ -1,0 +1,57 @@
+<section class="page">
+  <div class="container">
+    <h1 class="page__title">About Me</h1>
+    <p class="page__desc">Skills, educational background, and my resume.</p>
+
+    <div class="grid">
+      <article class="panel">
+        <h2 class="panel__title">Skills</h2>
+        <p class="panel__text">Add or remove skills anytime.</p>
+        <div class="chips">
+          <span class="chip">Angular</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">HTML</span>
+          <span class="chip">SCSS</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2 class="panel__title">Educational Background</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="item__top">
+              <span class="item__title">Add your school here</span>
+              <span class="item__meta">Year – Year</span>
+            </div>
+            <div class="item__desc">Add your course/track and highlights.</div>
+          </div>
+          <div class="item">
+            <div class="item__top">
+              <span class="item__title">Add your school here</span>
+              <span class="item__meta">Year – Year</span>
+            </div>
+            <div class="item__desc">Honors/awards/organizations (optional).</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="panel panel--resume">
+      <div class="resumeHead">
+        <div>
+          <h2 class="panel__title">Resume</h2>
+          <p class="panel__text">Download the PDF (recommended) or DOCX.</p>
+        </div>
+        <div class="resumeActions">
+          <a class="btn" href="assets/resume/MEsparagoza - RESUME.pdf" download>Download PDF</a>
+          <a class="btn btn--ghost" href="assets/resume/resume.docx" download>Download DOCX</a>
+        </div>
+      </div>
+      <div class="pdfWrap">
+        <iframe class="pdf" src="assets/resume/MEsparagoza - RESUME.pdf" title="Resume PDF preview"></iframe>
+      </div>
+      <p class="hint">If the preview is blank, ensure your PDF exists in <code>src/assets/resume/</code>.</p>
+    </div>
+  </div>
+</section>

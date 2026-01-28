@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-content">
+      <a routerLink="/" class="logo" (click)="closeMenu()" aria-label="Go to home">
+        <img class="logo__img" src="assets/images/red-web-logot.png" alt="Logo" />
+      </a>
+      
+      <button class="hamburger" 
+              [class.active]="isMenuOpen" 
+              (click)="toggleMenu()"
+              aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" [class.active]="isMenuOpen">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a></li>
+        <li><a routerLink="/about-me" routerLinkActive="active" (click)="closeMenu()">About Me</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="overlay" [class.active]="isMenuOpen" (click)="closeMenu()"></div>
