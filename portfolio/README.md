@@ -1,12 +1,12 @@
-# Hannah Lorainne's Portfolio
+# Mikka Kette P. Esparagoza - Portfolio
 
-A modern personal portfolio website built with Angular 19 featuring a neubrutalism design theme.
+A modern personal portfolio website built with Angular 20 featuring a dark theme with red accent colors and glassmorphism design elements.
 
 ## 🎨 Design Theme
 
-- **Style**: Neubrutalism
-- **Primary Color**: #9f82ce (Purple)
-- **Features**: Bold borders, strong shadows, and vibrant colors
+- **Style**: Dark theme with glassmorphism and gradient effects
+- **Primary Color**: #e23636 (Red)
+- **Features**: Glass-like panels, glowing effects, and modern gradients
 
 ## 📁 Project Structure
 
@@ -15,25 +15,34 @@ portfolio/
 ├── src/
 │   ├── app/
 │   │   ├── components/
-│   │   │   ├── navbar/          # Navigation bar
+│   │   │   ├── navbar/          # Navigation bar with mobile menu
 │   │   │   ├── about/           # About/Landing section
+│   │   │   ├── about-me/        # About me details
 │   │   │   ├── tech-stack/      # Tech stack showcase
-│   │   │   └── projects/        # Projects showcase
+│   │   │   ├── projects/        # Projects gallery
+│   │   │   ├── resume/          # Resume section
+│   │   │   ├── contact/         # Contact information
+│   │   │   └── footer/          # Footer component
 │   │   ├── app.ts
 │   │   ├── app.html
 │   │   └── app.scss
 │   ├── assets/
-│   │   └── images/
-│   │       └── profile.jpg      # Add your profile picture here
-│   └── styles.scss              # Global styles
+│   │   ├── images/              # Profile and project images
+│   │   └── resume/              # Resume files
+│   └── styles.scss              # Global styles with dark theme
+├── public/
+│   ├── favicon.ico
+│   ├── hann-cv.pdf             # Resume PDF
+│   └── _redirects              # SPA routing for deployment
+└── DEPLOYMENT.md               # Deployment instructions
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (v18 or higher)
-- npm or yarn
-- Angular CLI
+- npm
+- Angular CLI (v20+)
 
 ### Installation
 
@@ -47,55 +56,102 @@ cd portfolio
 npm install
 ```
 
-3. Add your profile picture:
-   - Place your profile image in `src/assets/images/profile.jpg`
-
-4. Run the development server:
+3. Run the development server:
 ```bash
+npm start
+# or
 ng serve
 ```
 
-5. Open your browser and navigate to `http://localhost:4200`
+4. Open your browser and navigate to `http://localhost:4200`
 
-## 📦 Build for Production
+## 📦 Build & Deployment
 
+### Build for Production
 ```bash
-ng build --configuration production
+npm run build
 ```
 
-The build artifacts will be stored in the `dist/` directory.
+### Deploy to Netlify
+```bash
+npm run deploy:netlify
+```
 
-## 🔗 Social Links
+### Deploy to GitHub Pages
+```bash
+npm run deploy:github
+```
 
-- Instagram: [@hann_.i](https://www.instagram.com/hann_.i/)
-- LinkedIn: [Hannah Lorainne Genandoy](https://www.linkedin.com/in/hannah-lorainne-genandoy-3b8a1b2b2/)
-- GitHub: [@genandoy-hannahlorainne](https://github.com/genandoy-hannahlorainne)
+The build artifacts will be stored in the `dist/browser/` directory. See `DEPLOYMENT.md` for detailed deployment instructions.
+
+## 🔗 Contact & Social Links
+
+- **Email**: [esparagozamikkakette@gmail.com](mailto:esparagozamikkakette@gmail.com)
+- **LinkedIn**: [Mikka Kette Esparagoza](https://www.linkedin.com/in/mikka-kette-esparagoza-1228563a7/)
+- **GitHub**: [@esparagoza-mikkakette](https://github.com/esparagoza-mikkakette)
 
 ## 🛠️ Technologies Used
 
-- Angular 19
-- TypeScript
-- SCSS
-- Neubrutalism Design
+- **Frontend**: Angular 20, TypeScript 5.9
+- **Styling**: SCSS with CSS custom properties
+- **Build Tool**: Angular CLI with esbuild
+- **Fonts**: Inter (Google Fonts)
+- **Design**: Dark theme with glassmorphism effects
+- **Deployment**: Netlify/Vercel ready with SPA routing
 
-## 📝 Customization
+## 🎨 Customization
 
-### Colors
+### Theme Colors
 Edit the CSS variables in `src/styles.scss`:
 ```scss
 :root {
-  --primary: #9f82ce;
-  --primary-dark: #7d5fb3;
-  --bg: #fef9f3;
-  --text: #1a1a1a;
-  --border: #1a1a1a;
+  --bg: #0b0d10;
+  --bg2: #0f1217;
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.68);
+  --accent: #e23636;
+  --accent2: #ff4a4a;
+  --border: rgba(255, 255, 255, 0.12);
 }
 ```
 
-### Content
+### Content Updates
 - **About Section**: Edit `src/app/components/about/about.html`
+- **About Me**: Edit `src/app/components/about-me/about-me.html`
 - **Tech Stack**: Edit `src/app/components/tech-stack/tech-stack.html`
 - **Projects**: Edit `src/app/components/projects/projects.html`
+- **Contact Info**: Edit `src/app/components/contact/contact.html`
+
+### Assets
+- **Profile Images**: Add to `src/assets/images/`
+- **Resume**: Update `public/hann-cv.pdf`
+- **Favicon**: Replace `public/favicon.ico`
+
+## 🚀 Features
+
+- ✅ Responsive design with mobile-first approach
+- ✅ Dark theme with glassmorphism effects
+- ✅ Smooth animations and hover effects
+- ✅ SEO optimized with proper meta tags
+- ✅ Single Page Application (SPA) routing
+- ✅ Optimized build with code splitting
+- ✅ Progressive Web App ready
+- ✅ Deployment ready for major platforms
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
